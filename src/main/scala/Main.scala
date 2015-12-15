@@ -4,7 +4,6 @@ object Main {
   val defaultErr = "arguments should be [integer] [integer] [+|x]."
 
   def main(args:Array[String]): Unit = {
-    println(args.mkString(","))
     val x =
       try {args(0).toInt}
       catch {case _:Throwable => sys.error(defaultErr)}
@@ -17,7 +16,7 @@ object Main {
         case _ => sys.error(defaultErr)
       }
     val builder = new StringBuilder
-    exe(1 to x, 1 to y, f).foreach{z => builder append z.mkString("","\n",",")}
+    exe(1 to x, 1 to y, f).foreach{z => builder append z.mkString("",",","\n")}
     println(builder.init)
   }
 
