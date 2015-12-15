@@ -16,6 +16,7 @@ object Main {
         case _ => sys.error(defaultErr)
       }
     val builder = new StringBuilder
+    // Ummmm!! This statement is very short. Similer statements should be implimented to Dlang...  
     exe(1 to x, 1 to y, f).foreach{z => builder append z.mkString("",",","\n")}
     println(builder.init)
   }
