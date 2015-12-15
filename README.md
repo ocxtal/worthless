@@ -1,5 +1,5 @@
 # worthless
-to study tes coding and version control for 
+to study test-driven development and version control
 
 ###INSTALL
 ```bash
