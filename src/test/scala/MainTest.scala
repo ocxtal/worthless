@@ -1,6 +1,3 @@
-/**
-  * Created by yuto on 15/12/15.
-  */
 import org.scalatest.FunSuite
 class MainTest extends FunSuite{
   val x = 2
