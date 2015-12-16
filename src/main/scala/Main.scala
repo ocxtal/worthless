@@ -1,7 +1,7 @@
 
 object Main {
 
-  val defaultErr = "arguments should be [integer] [integer] [+|x]."
+  val defaultErr = "arguments should be [integer] [integer] [+|x|*]."
 
   def main(args:Array[String]): Unit = {
     val x =
@@ -13,6 +13,7 @@ object Main {
     val f = args(2) match {
         case "+" => (a: Int, b: Int) => a + b
         case "x" => (a: Int, b: Int) => a * b
+        case "*" => (a: Int, b: Int) => a * b
         case _ => sys.error(defaultErr)
       }
     val builder = new StringBuilder
